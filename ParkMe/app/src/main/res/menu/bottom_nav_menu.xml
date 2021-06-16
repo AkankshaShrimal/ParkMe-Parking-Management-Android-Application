@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_foreground"
+        android:title="Home" />
+    <item
+        android:id="@+id/findSlots"
+        android:icon="@drawable/ic_history_foreground"
+        android:title="Find Slots" />
+    <item
+        android:id="@+id/query"
+        android:icon="@drawable/ic_query_foreground"
+        android:title="Query" />
+    <item
+        android:id="@+id/announcement"
+        android:icon="@drawable/ic_chat_foreground"
+        android:title="All Queries" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_profile_foreground"
+        android:title="Profile" />
+</menu>

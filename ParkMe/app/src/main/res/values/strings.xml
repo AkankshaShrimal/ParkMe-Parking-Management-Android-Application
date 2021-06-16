@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">ParkMe</string>
+    <!-- Use 192.168.x.x when using device, 10.0.2.2 when using default emulator, 10.0.3.2 when using genymotion-->
+    <!--    <string name="url">http://10.0.2.2:8083/parkme/</string>-->
+    <string name="url">https://parkme-service.herokuapp.com/parkme/</string>
+    <!--    <string name="url">http://192.168.29.87:8083/parkme/</string>-->
+    <string name="login_head"><u>Login</u></string>
+    <string name="settings_head"><u>Account Settings</u></string>
+    <string name="fpassword_head"><u>Forgot Password</u></string>
+    <string name="cpassword_head"><u>Change Password</u></string>
+    <string name="contributors"><u>Contributors</u></string>
+    <string name="login_email">Enter Email</string>
+    <string name="cpassword_email">Enter Email</string>
+    <string name="login_password">Enter Password</string>
+    <string name="cpassword_old">Enter Previous Password</string>
+    <string name="cpassword_new">Enter New Password</string>
+    <string name="cpassword_new_confirm">Confirm Password</string>
+    <string name="login_button_text">Login</string>
+    <string name="login_sign_in_with_the_phone_number">Sign in with phone number</string>
+    <string name="login_or">or</string>
+    <string name="login_forgot_password">Forgot password?</string>
+    <string name="home_notification">You have 2 open Queries!!!</string>
+    <string name="title_activity_raise_query">RaiseQueryActivity</string>
+    <string name="greet">Hello, %1$s</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+    <!-- Strings for Raise Query Page -->
+    <string name="raise_query_heading"><u>Raise Query</u></string>
+    <string name="query_type_heading">Query</string>
+    <string name="query_type_hint">Select Query Type</string>
+    <string name="message_heading">Message</string>
+    <string name="message_hint">Enter your message</string>
+    <string name="create_date_heading">Date Created</string>
+    <string name="close_date_heading">Date Closed</string>
+    <string name="add_image_heading">Add an Image</string>
+    <string name="vehicle_number_heading">Vehicle Number</string>
+    <string name="query_send_button">Send</string>
+    <string name="query_reset_button">Reset</string>
+
+    <!-- String Array for Query Types -->
+    <string-array name="query_types_array">
+        <item>--Select Query Type--</item>
+        <item>Parked in Wrong Slot</item>
+        <item>No Parking Area</item>
+        <item>Others</item>
+    </string-array>
+
+    <!-- Strings for Query Details Page -->
+    <string name="query_details_heading"><u>Query Details</u></string>
+    <string name="query_number_heading">Query Number</string>
+    <string name="number_plate_image_heading">Number Plate Image</string>
+    <string name="query_cancel_button">Cancel</string>
+    <string name="query_Resolve_button">Resolve</string>
+
+    <!-- String for View Profile Page -->
+    <string name="full_name">Full Name</string>
+    <string name="email_id">abcd@xyz.com</string>
+    <string name="phone_number">+91 987654321</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="full_name_details">Full Name</string>
+    <string name="password">Password</string>
+    <string name="id_card">ID Card</string>
+    <string name="additional_details">Additional Details</string>
+    <string name="contact_number">+91 987654321</string>
+    <string name="contact_number1">Contact Number</string>
+    <string name="address">Address</string>
+    <string name="exit">Exit</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_using_phone">Login using Phone</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="gen_error">An error Occurred</string>
+
+    <!-- String for Slots List -->
+    <string-array name="array_slots">
+        <item>Slot 1</item>
+        <item>Slot 2</item>
+        <item>Slot 3</item>
+        <item>Slot 4</item>
+        <item>Slot 5</item>
+        <item>Slot 6</item>
+        <item>Slot 7</item>
+        <item>Slot 8</item>
+    </string-array>
+
+    <!-- String for Slots Availability -->
+    <string-array name="array_slots_availability">
+        <item>Available</item>
+        <item>Occupied</item>
+        <item>Occupied</item>
+        <item>Available</item>
+        <item>Available</item>
+        <item>Available</item>
+        <item>Available</item>
+        <item>Occupied</item>
+    </string-array>
+
+</resources>

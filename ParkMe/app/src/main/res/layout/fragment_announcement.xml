@@ -1,0 +1,10 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/query_recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <recycler.coverflow.RecyclerCoverFlow
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></recycler.coverflow.RecyclerCoverFlow>
+</LinearLayout>
