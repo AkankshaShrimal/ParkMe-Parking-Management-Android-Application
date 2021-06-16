@@ -7,7 +7,7 @@
 | :--- | :----------------------: | 
 | 1. |   [Project Overview](#Project-Overview) |   
 | 2. |   [Project Demo](#Project-Demo) |   
-| 3. |[Functionalities Offered](#Functionalities)|   
+| 3. |[Functionalities](#Functionalities)|   
 | 4.  |  [Methodology](#Methodology)  | 
 | 5.  |    [References](#References)   | 
 | 6.  |    [Project Team Members](#Project-Team-Members)   | 
@@ -42,24 +42,85 @@ Project Report can be found in [MC_Project_EndTerm_Report.pdf](MC_Project_EndTer
 
 ## Project Demo
 
-                  Fig. Bound Box from Ground Truth 
+                  <!-- Fig. Bound Box from Ground Truth 
 
 <div align="center"><img src="Images/outputs/demo1_box_not_given.gif" height=400/></div>
 
                   Fig. Bound Box Coordinates Provided (top left:x1,y1 bottom right: x2,y2)
 
-<div align="center"><img src="Images/outputs/demo2_box_given.gif" height=400/></div>
+<div align="center"><img src="Images/outputs/demo2_box_given.gif" height=400/></div> -->
 
 <p>&nbsp;</p>
 
 ## Functionalities
+- RAISE QUERY
+    User will be able to raise a query to the intended user, by capturing the vehicle number and
+    ML model will detect the text on the number plate. User specifies the reason, parking space
+    and query type and query is automatically raised to the respective user. If no such user with
+    the same number plate is registered with the society, the query is directly raised to admin.
+- PUSH NOTIFICATION
+    Once a query is raised, a push notification is sent to the intended user with all other details.
+    On clicking the push notification, the user can see all the details and even chat with other
+    users.
+- CHAT FUNCTIONALITY
+    A chat interface between two users.
+- ANNOUNCEMENTS
+    A message can be delivered to all users using the particular app.
+- QUERY RESOLVING
+    The user can look into queries raised by him or queries raised to him. He can even resolve
+    the query when the work is done.
+- USER RATING
+    On resolving the queries, users will be asked to rate the other users and a rating will be
+    displayed for each and every user over the interface. This rating can then be used by the
+    society to reward/penalize the users.
+- FIND SLOTS
+    Our application also provides flexibility to search empty parking spaces available in the
+    society.
+- LOGIN
+    A login functionality with all checks.
+- FORGOT PASSWORD
+    Forgot password functionality.
+- CHANGE PASSWORD
+    change password functionality.
+- VIEW QUERY AND CHATS
+    Users can view all queries raised by him/to him along with all the chats.
+- PROFILE AND SETTING
+    A profile and settings page. Admin can be contacted through the settings page.
+- LOGOUT
+    A logout functionality.
 
 ## Methodology
+- RAISE QUERY
+
+- PUSH NOTIFICATION
+
+- CHAT FUNCTIONALITY
+    
+- ANNOUNCEMENTS
+    
+- QUERY RESOLVING
+   
+- USER RATING
+
+- FIND SLOTS
+
+- LOGIN
+    
+- FORGOT PASSWORD
+    
+- CHANGE PASSWORD
+    
+- VIEW QUERY AND CHATS
+    
+- PROFILE AND SETTING
+    
+- LOGOUT
+    
 
 
 ## References
 
-1. [FireBase Google Cloud Messaging](https://firebase.google.com/docs/cloud-messaging)
+1. [Firebase Google Cloud Messaging](https://firebase.google.com/docs/cloud-messaging)
 2. [Text Recognition using Firebase](https://firebase.google.com/docs/ml-kit/recognize-text) 
 
 
