@@ -18,7 +18,7 @@
 
 This project is done as a part of `Mobile Computing Course` Course.
 
-We developed a parking mangament app : ParkME to solve following problems related to parking space management. 
+We developed a parking management app : ParkMe to solve following problems related to parking space management. 
 - Vehicles parked in a haphazard manner, making it difficult to use parking space efficiently.
 - Two wheelers packed in four-wheeler space.
 - Vehicles parked in no-parking spaces.
@@ -26,10 +26,10 @@ We developed a parking mangament app : ParkME to solve following problems relate
 - Looking for empty parking spaces. 
   
 Our app will provide a common solution to all these problems by enabling user to :- 
-- Communicate with wrongly parked vehicle owners and ask to repark. 
+- Communicate with wrongly parked vehicle owners and ask to re-park. 
 - Send push notifications 
 - Chat instantly, if required
-- Penalise officials or locals by society or corporation.
+- Penalize officials or locals by society or corporation.
 - Look for empty parking spaces around. 
   
 
@@ -41,6 +41,40 @@ Project Report can be found in [MC_Project_EndTerm_Report.pdf](MC_Project_EndTer
 
 
 ## Project Demo
+
+
+                                   Fig 1. Architecture Implemented 
+<div align="center"><img src="Images/architecture.png" height='300px'/></div>
+
+                                   Fig 2.Raise Query, Push Notification and Chat Functionality
+
+ <table>
+  <tr>
+    <td>Raise Query</td>
+     <td>Push Notification</td>
+     <td>Chat Functionality</td>
+  </tr>
+  <tr>
+    <td><img src="Images/raise_query.gif" width=270 height=350></td>
+    <td><img src="Images/push_notification.gif" width=270 height=350></td>
+    <td><img src="Images/chat.gif" width=270 height=350></td>
+  </tr>
+ </table>  
+
+                                   Fig 3.Announcement, Resolve Query  and Settings Page
+
+ <table>
+  <tr>
+    <td>Announcement</td>
+     <td>Resolve Query</td>
+     <td>Settings Page</td>
+  </tr>
+  <tr>
+    <td><img src="Images/announcement.gif" width=270 height=350></td>
+    <td><img src="Images/rate_resolve_query.gif" width=270 height=350></td>
+    <td><img src="Images/settings.gif" width=270 height=350></td>
+  </tr>
+ </table>  
 
 
 <p>&nbsp;</p>
@@ -57,7 +91,7 @@ Project Report can be found in [MC_Project_EndTerm_Report.pdf](MC_Project_EndTer
     users.
 - **CHAT FUNCTIONALITY** :-
     A chat interface between two users.
-- ANNOUNCEMENTS
+- **ANNOUNCEMENTS**:-
     A message can be delivered to all users using the particular app.
 - **QUERY RESOLVING** :-
     The user can look into queries raised by him or queries raised to him. He can even resolve
@@ -84,26 +118,28 @@ Project Report can be found in [MC_Project_EndTerm_Report.pdf](MC_Project_EndTer
 
 ## Methodology
 - RAISE QUERY
+   - ML model of 'text recognition' used from FireBase and integrated with android. 
+   - With vehicle number mapping of user, query is sent to other user via push notifications using token of the user from database.
+    
 
 - PUSH NOTIFICATION
+  - Push Notifications [using FireBase cloud messaging app](https://medium.com/nybles/sending-push-notifications-by-using-firebase-cloud-messaging-249aa34f4f4c). For each user, a special token generated and mapped to that user in the database. 
+  From vehicle number other user token found in database, through which notifications are sent by FireBase. 
 
 - CHAT FUNCTIONALITY
+  - Chat functionality using recycler view and chats saved using room database and H2 database.
+  - Used Java Rx library for chats.
     
 - ANNOUNCEMENTS
-    
-- QUERY RESOLVING
-   
+  -  For sending FCM message to a group of devices, all such devices need to subscribe to a common topic. So all users belonging to a particular organization are subscribed to a common topic which act as mailing list from where announcements can be sent. 
+       
 - USER RATING
+  - Using RatingBar library in android. 
 
-- FIND SLOTS
-
-- LOGIN
-    
 - FORGOT PASSWORD
+  - Using JavaMailSender Library new password sent to user via email and also saved in database.
     
-- CHANGE PASSWORD
-    
-- VIEW QUERY AND CHATS
+- Session management using shared preferences. 
     
     
 ## References
@@ -117,7 +153,7 @@ Project Report can be found in [MC_Project_EndTerm_Report.pdf](MC_Project_EndTer
 
 1. Akanksha Shrimal
 2. Shivam Sharma 
-3. Shradha Sablok  
+3. Shraddha Sablok  
 4. Akhil Mahajan
   
 
